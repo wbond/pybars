@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools >= 61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pybars3"
+version = "0.9.7"
+description = 'Handlebars.js templating for Python 3 and 2'
+readme = "README.md"
+requires-python = ">=2.7"
+keywords = []
+authors = [
+  { name = "wbond", email = "will@wbond.net" },
+  { name = "mjumbewu", email = "mjumbewu@gmail.com" },
+]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: GNU Library or Lesser General Public License (LGPL)",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python :: 2",
+  "Programming Language :: Python :: 2.7",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.3",
+  "Programming Language :: Python :: 3.4",
+]
+dependencies = [
+  "PyMeta3>=0.5.1"
+]
+
+[project.urls]
+Documentation = "https://github.com/wbond/pybars3"
+Issues = "https://github.com/wbond/pybars3/issues"
+Source = "https://github.com/wbond/pybars3"
+
+[tool.setuptools]
+packages = ["pybars", "pybars._templates"]
